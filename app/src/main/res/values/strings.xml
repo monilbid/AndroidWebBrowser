@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Browser</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="accepted_data_01">http</string>
+    <string name="accepted_data_02">https</string>
 </resources>

@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private int NUM_TABS = 1;
     PagerAdapter pagerAdapter;
     WebFragment currentFragment;
+    String url;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.d("Action", "Search");
-                String url = searchEditText.getText().toString();
+                url = searchEditText.getText().toString();
 
                 // Check that the URL is not null or has a length of 0
                 if(url != null && url.length() != 0) {
@@ -55,6 +56,9 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        url = getIntent().getData().toString();
+        search(url);
     }
 
     @Override
