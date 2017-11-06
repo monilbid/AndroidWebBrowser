@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/previous_tab"
+        android:icon="@drawable/ic_action_previous"
+        android:title="Previous Tab"
+        app:showAsAction="always"></item>
+
+    <item
+        android:id="@+id/next_tab"
+        android:icon="@drawable/ic_action_next"
+        android:title="Next Tab"
+        app:showAsAction="always"></item>
+
+    <item
+        android:id="@+id/new_tab"
+        android:icon="@drawable/ic_action_new_tab"
+        android:title="New Tab"
+        app:showAsAction="always"></item>
+</menu>
